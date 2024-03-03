@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PeerJS Chat</title>
+    <script src="https://unpkg.com/peerjs@1.5.2/dist/peerjs.min.js"></script>
+</head>
+
+<body>
+    <div>
+        <label for="key">Enter Key:</label>
+        <input type="text" id="key">
+        <button onclick="connect()">Connect</button>
+        <button onclick="call()">Call</button>
+    </div>
+    <div>
+        <textarea id="chat" rows="10" cols="40" readonly></textarea>
+        <br>
+        <input type="text" id="message" placeholder="Type your message">
+        <button onclick="sendMessage()">Send</button>
+    </div>
+    <div>
+        <video id="remote-video"></video>
+        <video id="local-video" muted="true"></video>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
