@@ -1,4 +1,4 @@
-const peer = new Peer({ host: 'peerjs-peerjs-server.onrender.com', port: 443, secure: true, path: '/' });
+const peer = new Peer({ host: 'peer.xcodeclazz.com', port: 443, secure: true, path: '/' });
 let connection;
 
 peer.on('open', handleMessage);
